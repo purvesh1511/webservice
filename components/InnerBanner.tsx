@@ -1,5 +1,4 @@
 export default function InnerBanner({ name }: { name: string }) {
-    console.log("Ssssss" + name);
     return (
         <div className="container-fluid page-header py-5 mb-5 wow fadeIn">
             <div className="container text-center py-5">

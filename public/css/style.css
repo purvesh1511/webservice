@@ -496,3 +496,54 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+.process-box {
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary);
+}
+
+.process-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.process-number {
+  position: absolute;
+  top: -18px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tech-card h5{
+    color: #fff;
+    margin-bottom: 20px !important;
+}
+.tech-card {
+  transition: all 0.3s ease;
+  /* border-left: 4px solid #0d6efd; */
+  background: var(--primary);
+  text-align: center;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tech-badge {
+  background: #e9f2ff;
+  color: var(--primary);
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+}

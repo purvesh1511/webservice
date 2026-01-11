@@ -23,6 +23,9 @@ interface ContactData {
     };
 }
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
+
 export default function Footer() {
     const [contact, setContact] = useState<ContactData | null>(null);
     const [errors, setErrors] = useState<Partial<FormData>>({});
@@ -118,22 +121,23 @@ export default function Footer() {
                             <h5 className="text-light mb-4">Gallery</h5>
                             <div className="row g-2">
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-1.jpg" alt="Image" />
+                                    
+                                    <img className="img-fluid rounded" src="/img/project-1.jpg" alt="Image" />
                                 </div>
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-2.jpg" alt="Image" />
+                                    <img className="img-fluid rounded" src="/img/project-2.jpg" alt="Image" />
                                 </div>
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-3.jpg" alt="Image" />
+                                    <img className="img-fluid rounded" src="/img/project-3.jpg" alt="Image" />
                                 </div>
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-4.jpg" alt="Image" />
+                                    <img className="img-fluid rounded" src="/img/project-4.jpg" alt="Image" />
                                 </div>
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-5.jpg" alt="Image" />
+                                    <img className="img-fluid rounded" src="/img/project-5.jpg" alt="Image" />
                                 </div>
                                 <div className="col-4">
-                                    <img className="img-fluid rounded" src="img/project-6.jpg" alt="Image" />
+                                    <img className="img-fluid rounded" src="/img/project-6.jpg" alt="Image" />
                                 </div>
                             </div>
                         </div>

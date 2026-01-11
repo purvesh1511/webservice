@@ -1,23 +1,18 @@
-"use client";
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import Link from "next/link";
 
-interface ServiceData {
-    id: number;
-    service_image: string;
-    service_title: string;
-    service_url: string;
+async function getServices() {
+  const res = await fetch(process.env.NEXT_PUBLIC_BASE_URL +`/api/service`,
+    { cache: "no-store" }
+  );
+  
+  if (!res.ok) {
+    throw new Error("Failed to fetch services data");
+  }
+  return res.json();
 }
 
-export default function Service() {
-    const [services, setServices] = useState<ServiceData[]>([]);
-
-    useEffect(() => {
-        fetch("/api/service")
-            .then((res) => res.json())
-            .then((data) => setServices(data))
-            .catch((err) => console.error(err));
-    }, []);
+export default async function Service() {
+    const services = await getServices();
 
     return (
         <>
@@ -29,12 +24,12 @@ export default function Service() {
                         <h1 className="display-6 mb-4">We Focuse On Making The Best In All Sectors</h1>
                     </div>
                     <div className="row g-4">
-                        {services.map((service) => (
+                        {services.map((service : any) => (
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" key={service.id}>
-                            <a className="service-item d-block rounded text-center h-100 p-4" href={service.service_url}>
+                            <Link className="service-item d-block rounded text-center h-100 p-4" href={`/services/${service.slug}`}>
                                 <img className="img-fluid rounded mb-4" src={service.service_image} alt={service.service_title} />
                                     <h4 className="mb-0">{service.service_title}</h4>
-                            </a>
+                            </Link>
                         </div>
                         ))}
                     </div>

@@ -66,9 +66,9 @@ export default function Project() {
                                                         src={project.img}
                                                         alt={project.title}
                                                     />
-                                                    <a href={project.img}>
-                                                        <i className="fa fa-eye fa-2x"></i>
-                                                    </a>
+                                                    {/* <a href={project.img}> */}
+                                                        {/* <i className="fa fa-eye fa-2x"></i> */}
+                                                    {/* </a> */}
                                                 </div>
                                                 <h6>{project.title}</h6>
                                                 <span>{project.desc}</span>

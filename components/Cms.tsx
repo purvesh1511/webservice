@@ -3,7 +3,7 @@ export default function Cms({id}: {id: number}) {
         {
             id: 1,
             title: "Privacy Policy",
-            description: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+            description: "We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard any data you share with us while using our website or services.<br/><br/>We collect only the information necessary to provide and improve our services, respond to inquiries, and ensure a secure user experience. Your data is handled responsibly and is never sold, traded, or shared with third parties without your consent, except where required by law.<br><br>We implement appropriate technical and organizational measures to protect your information from unauthorized access, misuse, or disclosure. By using our website, you agree to the practices described in this policy.",
             readMoreLink: ""
         },
         {

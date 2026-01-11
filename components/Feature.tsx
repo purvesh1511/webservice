@@ -9,7 +9,7 @@ export default function Feature() {
                             <div className="h-100">
                                 <h6 className="section-title bg-white text-start text-primary pe-3">Why Choose Us</h6>
                                 <h1 className="display-6 mb-4">Why People Trust Us? Learn About Us!</h1>
-                                <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                <p className="mb-4">We are trusted by businesses because we consistently deliver reliable, high-quality digital solutions that create real results. With years of hands-on experience, we understand what it takes to turn ideas into successful digital products.</p>
                                 <div className="row g-4">
                                     <div className="col-12">
                                         <div className="skill">
