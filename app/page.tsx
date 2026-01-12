@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Fact from "@/components/Fact";
 import About from "@/components/About";
@@ -8,13 +6,10 @@ import Feature from "@/components/Feature";
 import Project from "@/components/Project";
 import Team from "@/components/Team";
 import Testimonial from "@/components/Testimonial";
-import Footer from "@/components/Footer";
-
 
 export default function Home() {
   return (
     <div className="body">
-      <Header />
       <Hero />
       <Fact />
       <About />
@@ -23,7 +18,6 @@ export default function Home() {
       <Project />
       <Team teamSize={3}/>
       <Testimonial />
-      <Footer />
     </div>
   );
 }

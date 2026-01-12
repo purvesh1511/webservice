@@ -9,11 +9,9 @@ import Cms from "@/components/Cms";
 export default function TermPage() {
   return (
     <div className="body">
-      <Header />
       <InnerBanner name="Support" />
       <Cms id={5} />
       <Testimonial />
-      <Footer />
     </div>
   );
 }

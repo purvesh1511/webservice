@@ -7,6 +7,9 @@ import "../public/css/style.css";
 import Script from "next/script";
 import Link from "next/link";
 import { Toaster } from "react-hot-toast";
+import ClientLoader from "@/components/ClientLoader";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,8 +32,13 @@ export default function RootLayout({
       </head>
       <body>
         {/* Toast container */}
-        <Toaster position="top-right" reverseOrder={false} />
-        {children}
+        
+        <ClientLoader>
+          <Header />
+          <Toaster position="top-right" reverseOrder={false} />
+          {children}
+          <Footer />
+        </ClientLoader>
 
         {/* <!-- Back to Top --> */}
         <Link href="#" className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
