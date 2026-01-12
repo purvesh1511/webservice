@@ -89,7 +89,7 @@ export default async function ServiceDetail({ slug }: { slug: string }) {
                                     <h5 className="mb-0">Frameworks</h5>
                                 </div>
                                 <div className="d-flex flex-wrap gap-2">
-                                    {service.frameworks.map((item, i) => (
+                                    {service.frameworks.map((item: string, i: number) => (
                                         <span key={i} className="badge tech-badge">
                                             {item}
                                         </span>
@@ -105,7 +105,7 @@ export default async function ServiceDetail({ slug }: { slug: string }) {
                                     <h5 className="mb-0">Backend</h5>
                                 </div>
                                 <div className="d-flex flex-wrap gap-2">
-                                    {service.backend.map((item, i) => (
+                                    {service.backend.map((item: string, i: number) => (
                                         <span key={i} className="badge tech-badge">
                                             {item}
                                         </span>
@@ -121,7 +121,7 @@ export default async function ServiceDetail({ slug }: { slug: string }) {
                                     <h5 className="mb-0">Database</h5>
                                 </div>
                                 <div className="d-flex flex-wrap gap-2">
-                                    {service.database.map((item, i) => (
+                                    {service.database.map((item: string, i: number) => (
                                         <span key={i} className="badge tech-badge">
                                             {item}
                                         </span>
@@ -137,7 +137,7 @@ export default async function ServiceDetail({ slug }: { slug: string }) {
                                     <h5 className="mb-0">Tools</h5>
                                 </div>
                                 <div className="d-flex flex-wrap gap-2">
-                                    {service.tools.map((item, i) => (
+                                    {service.tools.map((item: string, i: number) => (
                                         <span key={i} className="badge tech-badge">
                                             {item}
                                         </span>
