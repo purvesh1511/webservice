@@ -3,6 +3,7 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface ContactData {
     address: string;
@@ -59,7 +60,10 @@ export default function Header() {
                 <div className="row align-items-center top-bar">
                     <div className="col-lg-4 col-md-12 text-center text-lg-start">
                         <Link href="/" className="navbar-brand m-0 p-0">
-                            <h1 className="fw-bold text-primary m-0"><i className="fa fa-laptop-code me-3"></i>{contact.companyName}</h1>
+                            <h1 className="fw-bold text-primary m-0">
+                                <i className="fa fa-laptop-code me-3"></i>
+                                <Image src="/P3Tech.png" alt="Logo" width={180} height={90} />
+                            </h1>
                         </Link>
                     </div>
                     <div className="col-lg-8 col-md-7 d-none d-lg-block">

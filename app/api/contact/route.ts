@@ -7,7 +7,7 @@ export async function GET(request: Request) {
         address: "123 Street, New York, USA",
         openingHours: "Mon - Fri: 9:00 - 6:00",
         designer: "Purvesh Patel",
-        companyName: "DGcom",
+        companyName: "P3 Tech",
         socials: {
             twitter: "https://www.twitter.com",
             facebook: "https://www.facebook.com",
