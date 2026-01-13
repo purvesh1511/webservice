@@ -1,6 +1,7 @@
 import { time } from "console";
 import { services } from "./data";
+import { NextResponse, NextRequest } from "next/server";
 
-export async function GET(request: Request) {
-    return new Response(JSON.stringify(services));
+export async function GET(request: NextRequest) {
+    return NextResponse.json(services);
 }
